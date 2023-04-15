@@ -1,0 +1,275 @@
+.contact{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.contact .left-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--textColorDark);
+}
+
+.contact .right-inner{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background:url('../../Assets/hero2-bg.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.contact .right-inner::after{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background:black;
+    content: '';
+    opacity: .8;
+}
+
+.contact .left-outer{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 20%;
+    height: 50%;
+    background-color: var(--bgColorDark);
+    padding: 20px;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    overflow: hidden;
+    gap: 1rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+}
+.contact .left-outer .links{
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.3rem;
+}
+.contact .left-outer .links a{
+    color: white;
+}
+.contact .left-outer h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.contact .left-outer .detail-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact .left-outer .detail-box .detail{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+}
+.contact .left-outer .detail-box .detail a{
+    color: white;
+    font-size: .7rem;
+}
+.contact .right-outer{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    padding: 20px;
+    z-index: 1;
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.9);
+}
+.contact .right-outer .left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+}
+
+.contact .right-outer .right{
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px 15px;
+    overflow: hidden;
+    gap: 1rem;
+}
+
+.contact .right-outer .right h3{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.contact .right-outer .right form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact .right-outer .right form input[type="text"],.contact .right-outer .right form input[type="email"],.contact .right-outer .right form input[type="number"]{
+    width: 45%;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: var(--navColor);
+    outline-width: 0;
+    border: none;
+}
+
+.contact .right-outer .right form textarea{
+    width:92%;
+    height: 20vh;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: var(--navColor);
+    outline-width: 0;
+    border: none;
+    resize: none;
+}
+.contact .right-outer .right form input[type="submit"]{
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border:none;
+    color: white;
+    background-color: #ff568c;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.contact .right-outer .right form input[type="submit"]:hover{
+    transform: scale(1.05);
+}
+
+
+/* For Tablets */
+@media screen and (max-width:999px) {
+    .contact .left-inner {
+        width: 100%;
+        height: 50%;
+    }
+    .contact .right-inner {
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 50%;
+    }
+    .contact .left-outer {
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 30%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .contact .left-outer .links{
+        left: 30%;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .left-outer .detail-box .detail a{
+        font-size: 1.3rem;
+    }
+    .contact .left-outer .detail-box{
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .right-outer {
+        top: 40%;
+        left: 10%;
+        width: 80%;
+        height: 50%;
+    }
+    .contact .right-outer .left{
+        width: 0;
+        height: 0;
+    }
+    .contact .right-outer .right{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .right-outer .right form{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px) {
+    .contact .left-outer .detail-box{
+        gap: .1rem;
+    }
+    .contact .left-outer .detail-box .detail a{
+        font-size: .7rem;
+    }
+    .contact .left-outer .detail-box .detail{
+        font-size: 1rem;
+    }
+
+    .contact .left-outer h3 {
+        font-size: 1rem;
+    }
+    .contact .left-outer .links {
+        font-size: 1rem;
+    }
+    .contact .right-outer .right h3 {
+        font-size: 1rem;
+    }
+    .contact .right-outer .right form {
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .contact .right-outer .right form input[type="text"],.contact .right-outer .right form input[type="email"],.contact .right-outer .right form input[type="number"]{
+        width: 100%;
+        font-size: .7rem;
+        padding: 5px;
+    }
+    .contact .right-outer .right form textarea {
+        width: 100%;
+        height: 10vh;
+        font-size: .7rem;
+    }
+    .contact .right-outer .right form input[type="submit"] {
+        font-size: .7rem;
+        padding: 5px 10px;
+    }
+}

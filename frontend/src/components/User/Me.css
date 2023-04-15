@@ -1,0 +1,207 @@
+.me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: white;
+    padding: 20% 7%;
+}
+
+.me .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--navColor);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .2);
+}
+.me .profile .left h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.me .profile .left,.me .profile .right{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.me .profile .left .pic{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.me .profile .left .pic img{
+    width: 100%;
+    height: 100%;
+}
+
+.me button{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--textColor);
+    padding: 10px 20px;
+    border: none;
+    font-weight: 700;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.me .right > button{
+    background-color: var(--textColorWarn);
+    font-size: 1rem;
+}
+.me  button:hover{
+    transform: scale(1.05);
+}
+
+.me .right .info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.me .right .info .topic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.me .right .info .topic h4{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.me .right .info .topic h5{
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.me .right .btns{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+   
+}
+
+.me .right .btns button{
+    font-size: 1rem;
+}
+.modal .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+.modal .text input{
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: var(--navColor);
+    width: 100%;
+}
+
+.modal .text input:focus{
+    outline-width: 0;
+}
+
+.me .review-modal .modal .file{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.me .review-modal .modal .file img{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+}
+/* For Tablets */
+@media screen and (max-width:999px) {
+    .me .profile{
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px) {
+    .me .profile .left .pic{
+        width: 120px;
+        height: 120px;
+    }
+    .me button{
+        font-size: .8rem;
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+    .me .profile{
+        gap: 1rem;
+    }
+    .me .profile .left h3 {
+        font-size: 1rem;
+    }
+    .me .profile .left{
+        gap: .4rem;
+    }
+    .me .profile .right{
+        gap: .5rem;
+    }
+    .me .right .info{
+        gap: .5rem;
+    }
+    .me .right .info .topic h4{
+        font-size: 1rem;
+    }
+    .me .right .info .topic h5{
+        font-size: .8rem;
+    }
+    .me .right .btns {
+        gap: .5rem;
+    }
+    .me .right .btns button{
+        font-size: .8rem;
+    }
+    .me .right> button{
+        font-size: .8rem;
+    }
+
+    .me .review-modal .modal button {
+        font-size: .8rem;
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+    .me .review-modal .modal .title {
+        font-size: .9rem;
+    }
+    .me .review-modal .modal .text input {
+        font-size: .9rem;
+    }
+}

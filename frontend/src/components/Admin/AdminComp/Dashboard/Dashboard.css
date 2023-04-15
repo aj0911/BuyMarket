@@ -1,0 +1,295 @@
+.dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.dashboard .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+    animation: animateUp .5s forwards   ease-in ;
+}
+
+.dashboard .cards .card{
+    width: 30%;
+    padding: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    transition: var(--transition);
+}
+
+.dashboard .cards .card:hover,.dashboard .middle .revenue:hover,.dashboard .middle .chart:hover{
+    transform: scale(1.05);
+}
+
+.dashboard .cards .card>h4{
+    color: var(--navColorDark);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.dashboard .cards .card>h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.dashboard .cards .card> .lower{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.dashboard .cards .card> .lower h4{
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.dashboard .cards .card> .lower >.icon{
+    background-color: var(--navColor);
+    color: var(--textColor);
+    padding: 5px;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+.dashboard .middle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dashboard .middle .revenue{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    transition: var(--transition);
+    animation: animateLeft .5s forwards   ease-in ;
+}
+
+.dashboard .middle .revenue .top{
+    width: 100%;
+    font-size: 1.2rem;
+    color: var(--navColorDark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .middle .revenue .top h3{
+    font-weight: 400;
+}
+.dashboard .middle .revenue .middle,.dashboard .middle .revenue .sales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.dashboard .middle .revenue .middle .sales h4{
+    color: var(--navColorDark);
+    font-weight: 500;
+    font-size: 1rem;
+}
+.dashboard .middle .revenue .middle .sales h3{
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.dashboard .middle .revenue .lower{
+    padding: 10px;
+}
+.dashboard .middle .revenue .lower p{
+    text-align: center;
+    color: var(--navColorDark);
+    font-weight: 400;
+    font-size: .9rem
+}
+
+.dashboard .middle .chart{
+    transition: var(--transition);
+    width: 60%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px;
+    animation: animateRight .5s forwards   ease-in ;
+}
+
+.dashboard .middle .chart h3{
+    width: 100%;
+    font-size: 1.2rem;
+    color: var(--navColorDark);
+    font-weight: 400;
+}
+
+.dashboard >.lower{
+    padding: 20px 10px;
+    width: 100%;
+    box-shadow: -10px -10px 20px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    animation: animateDown .5s forwards   ease-in ;
+}
+
+.dashboard > .lower h3{
+    color: var(--navColorDark);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.dashboard > .lower table{
+    width: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dashboard > .lower table thead th{
+    color: var(--navColorDark);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.dashboard > .lower table tbody tr td{
+    font-size: .9rem;
+    font-weight: 500;
+}
+.dashboard > .lower table tbody tr td >.table-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.dashboard > .lower table tbody tr td >.table-item img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.dashboard > .lower th,.dashboard > .lower td {
+    border-bottom: 1px solid var(--navColor);
+  }
+.dashboard > .lower  table,.dashboard > .lower th,.dashboard > .lower td {
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
+
+.dashboard > .lower table tbody tr{
+    transition: all .3s;
+}
+
+.dashboard > .lower table tbody tr:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* For Tablets */
+@media screen and (max-width:999px) {
+    .dashboard .cards .card{
+        width: 48%;
+    }
+    .dashboard .middle{
+        flex-direction: column;
+    }
+    .dashboard .middle .revenue{
+        width: 100%;
+    }
+    .dashboard .middle .chart{
+        width: 100%;
+    }
+    .dashboard > .lower table tbody tr td {
+        font-size: .7rem;
+    }
+    .dashboard > .lower table tbody tr td >.table-item {
+        gap: .5rem;
+    }
+    .dashboard > .lower table tbody tr td >.table-item img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px) {
+    .dashboard .cards{
+        flex-direction: column;
+    }
+    .dashboard .cards .card{
+        width: 100%;
+    }
+    .dashboard .middle .chart h3 {
+        font-size: 1rem;
+    }
+    .dashboard > .lower table tbody tr td {
+        font-size: .7rem;
+    }
+    .dashboard > .lower table > thead{
+        display: none;
+    }
+    .dashboard > .lower table,.dashboard > .lower table tbody ,.dashboard > .lower tbody tr,.dashboard > .lower td{
+        display: block;
+        width: 100%;
+    }
+    .dashboard > .lower tbody tr{
+        margin-bottom: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);
+        
+        
+    }
+    .dashboard > .lower table{
+        box-shadow: 0px 0px rgba(0, 0, 0, .2);
+    }
+
+    .dashboard > .lower tbody tr td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        
+    }
+    .dashboard > .lower tbody tr td:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        width: 50%;
+        height: 100%;
+        content: attr(data-label);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 15px;
+    }
+    .dashboard > .lower tbody tr td .table-item{
+        justify-content: flex-end;
+    }
+}

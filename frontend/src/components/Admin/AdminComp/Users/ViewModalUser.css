@@ -1,0 +1,62 @@
+.viewModal >.modal > form .imgAvatar .avatar{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+.viewModal > #deleteModal{
+    width: 40%;
+    text-align: center;
+}
+.viewModal > #deleteModal > .heading{
+    color: black;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+.viewModal >.modal > form .form-item #editRole{
+    padding: 5px 10px;
+    color: var(--textColorDark);
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: var(--transition);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.viewModal >.modal > form .form-item #editRole:hover{
+    color: white;
+    background-color: var(--textColorDark);
+}
+
+.viewModal > .modal > form .imgAvatar .avatar:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .1);
+}
+
+.viewModal >.modal > form .imgAvatar .avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ /* For Tablets */ 
+ @media screen and (max-width:999px) {
+    .viewModal > #deleteModal{
+        width: 60%;
+    }
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px){
+    .viewModal >.modal > form .form-item #editRole{
+        font-size: .8rem;
+    }
+    .viewModal > #deleteModal{
+        width: 90%;
+    }
+}

@@ -1,0 +1,490 @@
+.delivery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    gap: 1rem;
+}
+
+.delivery h5, .delivery h3{
+    word-wrap: break-word;
+}
+
+.delivery .upper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%; 
+    transition: var(--transition);
+    animation: animateUp .5s forwards   ease-in ;
+    flex-wrap: wrap;
+}
+
+.delivery .upper > .creditCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding:  20px;
+    background: linear-gradient(45deg,#0045c7,#ff2c7d);
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    color: white;
+    gap: 1rem;
+}
+.delivery .upper > .creditCard:hover,.delivery .upper > .balance:hover,.delivery .upper > .invoices:hover,.delivery .upper > .invoices > .invoice-table thead td button:hover,.delivery .upper > .invoices > .invoice-table tbody tr td .boxRight button:hover,.delivery .lower > .billingInfo:hover,.delivery .lower > .transactions:hover{
+    transform: scale(1.05);
+}
+.delivery .upper > .creditCard > .topCard{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+    color:white;
+}
+.delivery .upper > .creditCard > .middleCard {
+    width: 100%;
+}
+.delivery .upper > .creditCard > .middleCard h3{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.delivery .upper > .creditCard > .lowerCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.delivery .upper > .creditCard > .lowerCard h5{
+    font-weight: 400;
+    font-size: .6rem;
+    text-transform: uppercase;
+}
+.delivery .upper > .creditCard > .lowerCard h3{
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.delivery .upper > .creditCard > .lowerCard >.holder{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.delivery .upper > .creditCard > .lowerCard >.valid{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.delivery .upper > .balance{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background: linear-gradient(45deg,var(--textColorDark),var(--textColor)) ;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    gap: 1rem;
+}
+
+.delivery .upper > .balance > .current{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3) ;
+    backdrop-filter: 5px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.delivery .upper > .balance > .current > .balance{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.delivery .upper > .balance > .current > .earning{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.delivery .upper > .balance > .current h3{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.delivery .upper > .balance > .current  h5,.delivery .upper > .balance > .new > h5{
+    font-size: .7rem;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.delivery .upper > .balance > .new{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+.delivery .upper > .balance > .new > .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.delivery .upper > .balance > .new > .box > .left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1rem;
+}
+.delivery .upper > .balance > .new > .box > .right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.delivery .upper > .balance > .new > .box > .left > .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.delivery .upper > .balance > .new > .box > .left > .text h3{
+    font-size: .9rem;
+    font-weight: 600;
+}
+.delivery .upper > .balance > .new > .box > .left > .text h5{
+    font-size: .7rem;
+    font-weight: 400;
+}
+
+.delivery .upper > .invoices{
+    flex-grow: 1;
+    padding: 20px;
+    background: linear-gradient(45deg,var(--textColorDark),var(--textColor)) ;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    gap: 1rem;
+}
+
+.delivery .upper > .invoices > .invoice-table{
+    width: 100%;
+    text-align: left;
+}
+
+.delivery .upper > .invoices > .invoice-table thead td{
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.delivery .upper > .invoices > .invoice-table thead td:last-child{
+    text-align: right;
+}
+
+.delivery .upper > .invoices > .invoice-table thead td button,.delivery .upper > .invoices > .invoice-table tbody tr td .boxRight button{
+    padding: 3px 6px;
+    font-size: .9rem;
+    text-transform: capitalize;
+    border: none;
+    background-color: var(--textColor);
+    color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    border-radius: 3px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.delivery .upper > .invoices > .invoice-table tbody tr td .boxLeft{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.delivery .upper > .invoices > .invoice-table tbody tr td h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.delivery .upper > .invoices > .invoice-table tbody tr td h5{
+    font-size: .7rem;
+    font-weight: 400;
+
+}
+.delivery .upper > .invoices > .invoice-table tbody tr td{
+    border-collapse: collapse;
+    padding: 5px;
+}
+.delivery .upper > .invoices > .invoice-table tbody tr td .boxRight{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .5rem;
+}
+.delivery .upper > .invoices > .invoice-table tbody tr td .boxRight h5{
+    font-size: .9rem;
+    font-weight: 500;
+}
+.delivery .upper > .invoices > .invoice-table tbody tr td .boxRight button{
+    color: var(--textColorDark);
+    background-color: white;
+}
+.delivery .upper > .invoices > .invoice-table tbody tr td .boxRight button:hover{
+    color: white;
+    background-color: var(--textColorDark);
+}
+
+.delivery .lower{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1rem;
+    animation: animateDown .5s forwards   ease-in ;
+    transition: var(--transition);
+    flex-wrap: wrap;
+}
+
+.delivery .lower > .billingInfo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    background-image: linear-gradient(135deg, #FF0099 10%, #493240 100%);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    gap: 1rem;
+}
+.delivery .lower > .billingInfo h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.delivery .lower > .billingInfo > .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+}
+.delivery .lower > .billingInfo > .content > .left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.delivery .lower > .billingInfo > .content > .right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.delivery .lower > .billingInfo > .content  h3{
+    font-weight: 500;
+    font-size: 1rem;
+}
+.delivery .lower > .billingInfo > .content  h5{
+    font-weight: 400;
+    font-size: .7rem;
+}
+.delivery .lower > .billingInfo > .content  h5 > span{
+    font-weight: 450;
+    font-size: .8rem;
+}
+.delivery .lower > .transactions{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+    background: linear-gradient(160deg,var(--textColorDark),#0E1134,var(--textColorWarn)) ;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    gap: 1rem;
+}
+
+.delivery .lower > .transactions .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.delivery .lower > .transactions .heading>h3{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.delivery .lower > .transactions .heading>h3:last-child{
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.delivery .lower > .transactions .box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+.delivery .lower > .transactions .box>h3{
+    font-size: .9rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.delivery .lower > .transactions .box > .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.delivery .lower > .transactions .box > .row > .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.delivery .lower > .transactions .box > .row > .left> .inner-div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.delivery .lower > .transactions .box > .row > .left> .inner-div h3{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.delivery .lower > .transactions .box > .row > .left> .inner-div h5{
+    font-size: .8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+/* For Tablets */
+@media screen and (max-width:999px) {
+    .delivery .creditCard,.delivery .balance{
+        animation: animateUp .5s forwards   ease-in ;
+    }
+    .delivery .invoices{
+        animation: animateLeft .5s forwards   ease-in ;
+    }
+    .delivery .billingInfo{
+        animation: animateRight .5s forwards   ease-in ;
+    }
+    .delivery .transactions{
+        animation: animateDown .5s forwards   ease-in ;
+    }
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px) {
+    .delivery .upper > .creditCard > .topCard {
+        font-size: 2rem;
+    }
+    .delivery .upper > .balance > .current h5, .delivery .upper > .balance > .new > h5 {
+        font-size: .5rem;
+    }
+    .delivery .upper > .balance > .current h3 {
+        font-size: .9rem;
+    }
+    .delivery .upper > .balance > .new > .box > .left > .text h3 {
+        font-size: .7rem;
+    }
+    .delivery .upper > .balance > .new > .box > .left > .text h5 {
+        font-size: .5rem;
+    }
+    .delivery .upper > .invoices > .invoice-table tbody tr td h3 {
+        font-size: .6rem;
+    }
+    .delivery .upper > .invoices > .invoice-table tbody tr td h5 {
+        font-size: .5rem;
+    }
+    .delivery .upper > .invoices {
+        padding: 10px;
+    }
+    .delivery .upper > .invoices > .invoice-table tbody tr td .boxRight h5 {
+        font-size: .7rem;
+    }
+    .delivery .upper > .invoices > .invoice-table thead td button, .delivery .upper > .invoices > .invoice-table tbody tr td .boxRight button {
+        font-size: .6rem;
+    }
+    .delivery .lower > .billingInfo > .content h3 {
+        font-size: .7rem;
+    }
+    .delivery .lower > .billingInfo > .content h5 > span {
+        font-weight: 450;
+        font-size: .6rem;
+    }
+    .delivery .lower > .billingInfo > .content h5 {
+        font-weight: 400;
+        font-size: .5rem;
+    }
+    .delivery .lower > .billingInfo > .content, .delivery .lower > .billingInfo > .content .left,.delivery .lower > .billingInfo > .content .right{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .delivery .lower > .transactions .heading>h3 {
+        font-size: .8rem;
+    }
+    .delivery .lower > .transactions{
+        padding: 10px;
+    }
+    .delivery .lower > .transactions .heading>h3:last-child {
+        font-size: 0.5rem;
+        gap: 0.2rem;
+    }
+    .delivery .lower > .transactions .box>h3 {
+        font-size: .6rem;
+    }
+    .delivery .lower > .transactions .box > .row > .left> .inner-div h3 {
+        font-size: .7rem;
+    }
+    .delivery .lower > .transactions .box > .row > .left> .inner-div h5 {
+        font-size: .5rem;
+    }
+    .delivery .lower > .transactions .box > .row > .right> h3{
+        font-size: .7rem;
+        font-weight: 500;
+    }
+}

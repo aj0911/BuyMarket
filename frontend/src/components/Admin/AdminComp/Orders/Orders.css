@@ -1,0 +1,299 @@
+.viewModal > .modal > .modal-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: none;
+    width: 100%;
+    padding: 10px;
+}
+.viewModal > .modal > .modal-inner > #divToPrint{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.viewModal > .modal > .modal-inner > #divToPrint > .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0rem;
+    border-bottom: none;
+    width: 100%;
+}
+.viewModal > .modal > .modal-inner > #divToPrint > .header h2{
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.viewModal > .modal > .modal-inner > #divToPrint > .header h4{
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.viewModal > .modal > .modal-inner > #divToPrint > .details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.viewModal > .modal > .modal-inner > #divToPrint > .details .left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.viewModal > .modal > .modal-inner > #divToPrint > .details .left > h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.viewModal > .modal > .modal-inner > #divToPrint > .details .left > h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.viewModal > .modal > .modal-inner > #divToPrint > .details .left > ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: column;
+}
+.viewModal > .modal > .modal-inner > #divToPrint > .details .left > ul li{
+    font-size: .9rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.viewModal > .modal > .modal-inner > #divToPrint > .details .left > ul li a{
+    font-size: .9rem;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.viewModal > .modal > .modal-inner > #divToPrint > .details .right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.viewModal > .modal > .modal-inner > #divToPrint > .details .right > h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.viewModal > .modal > .modal-inner > #divToPrint > .details .right > ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: column;
+}
+.viewModal > .modal > .modal-inner > #divToPrint > .details .right > ul >li{
+    width: 100%;
+}
+.viewModal > .modal > .modal-inner > #divToPrint > .details .right > ul >li .box,.viewModal > .modal > .modal-inner > #divToPrint > .lower ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+.viewModal > .modal > .modal-inner > #divToPrint > .details .right > ul >li .box h4{
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.viewModal > .modal > .modal-inner > #divToPrint > .details .right > ul >li .box h5{
+    text-align: right;
+    font-size: .9rem;
+    font-weight: 400;
+}
+.viewModal > .modal > .modal-inner  button{
+    font-size: 1rem;
+    color: var(--textColorDark);
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.viewModal > .modal > .modal-inner > #divToPrint > button{
+    font-size: 1.3rem;
+    padding: 10px 20px;
+}
+.viewModal > .modal > .modal-inner  button:hover{
+    transform: scale(1.05);
+    color: white;
+    background-color: var(--textColorDark);
+}
+
+.viewModal > .modal > .modal-inner > #divToPrint > .table{
+    text-align: center;
+    width: 100%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.viewModal > .modal > .modal-inner > #divToPrint > .table thead td{
+    border-right: 1px solid var(--navColorDark);
+    color: var(--navColorDark);
+
+}
+.viewModal > .modal > .modal-inner > #divToPrint > .table tbody tr td{
+    font-size: 1rem;
+    border-bottom: 1px solid var(--navColor);
+    font-weight: 500;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+    text-transform: capitalize;
+    overflow: hidden;
+}
+.viewModal > .modal > .modal-inner > #divToPrint > .table tbody tr{
+    transition: var(--transition);
+}
+.viewModal > .modal > .modal-inner > #divToPrint > .table tbody tr:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+.viewModal > .modal > .modal-inner > #divToPrint > .table tbody tr td img{
+    width: 100px;
+    height: 100px;
+}
+
+.viewModal > .modal > .modal-inner > #divToPrint > .lower{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.viewModal > .modal > .modal-inner > #divToPrint > .lower ul{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 40%;
+    
+}
+.viewModal > .modal > .modal-inner  > .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.viewModal > .modal > .modal-inner > #divToPrint > .lower ul li{
+    border-top: 1px solid var(--textColorDark);
+    gap: 2rem;
+    padding: 10px;
+}
+.viewModal > .modal > .modal-inner > #divToPrint > .lower ul li h4{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: right;
+}
+.viewModal > .modal > .modal-inner > #divToPrint > .lower ul li h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* For Tablets */
+@media screen and (max-width:999px) {
+    .viewModal > .modal > .modal-inner > #divToPrint > .table thead{
+        display: none;
+    }
+    .viewModal > .modal > .modal-inner > #divToPrint > .table tbody,.viewModal > .modal > .modal-inner > #divToPrint > .table tbody tr,.viewModal > .modal > .modal-inner > #divToPrint > .table tbody tr td{
+        display: block;
+        width: 100%;
+    }
+
+    .viewModal > .modal > .modal-inner > #divToPrint > .table{
+        box-shadow: 0px 0px;
+    }
+
+    .viewModal > .modal > .modal-inner > #divToPrint > .table tbody tr{
+        box-shadow: 10px 10px 20px rgba(0,0,0,.1);
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .viewModal > .modal > .modal-inner > #divToPrint > .table tbody tr td{
+        text-align: right;
+        font-size: .8rem;
+        padding-left: 50%;
+        position: relative;
+    }
+    .viewModal > .modal > .modal-inner > #divToPrint > .table tbody tr td::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        content: attr(data-label);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 15px;
+    }
+    .viewModal > .modal > .modal-inner > #divToPrint > .lower ul {
+        width: 100%;
+    }
+    .viewModal > .modal > .modal-inner > #divToPrint > .details {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px) {
+    .viewModal > .modal > .modal-inner > #divToPrint > .header h4 {
+        font-size: .8rem
+    }
+    .viewModal > .modal > .modal-inner > #divToPrint > .header h2 {
+        font-size: 1rem
+    }
+    .viewModal > .modal > .modal-inner > #divToPrint > .details .left > ul li {
+        font-size: .7rem;
+    }
+    .viewModal > .modal > .modal-inner > #divToPrint > .details .left > h4 {
+        font-size: .9rem;
+    }
+    .viewModal > .modal > .modal-inner > #divToPrint > .details .left > h3,.viewModal > .modal > .modal-inner > #divToPrint > .details .right > h3 {
+        font-size: 1rem;
+    }
+    .viewModal > .modal > .modal-inner > #divToPrint > .details .right > ul >li .box h4 {
+        font-size: .8rem;
+    }
+    .viewModal > .modal > .modal-inner > #divToPrint > .details .right > ul >li .box h5 {
+        font-size: .7rem;
+    }
+    .viewModal > .modal > .modal-inner  button {
+        font-size: .8rem;
+    }
+    .viewModal > .modal > .modal-inner > #divToPrint > .table tbody tr td img {
+        height: 50px;
+        width: 50px;
+    }
+    .viewModal > .modal > .modal-inner > #divToPrint > .lower ul li h4 {
+        font-size: .8rem;
+    }
+    .viewModal > .modal > .modal-inner > #divToPrint > .lower ul li h3 {
+        font-size: 1rem;
+    }
+}

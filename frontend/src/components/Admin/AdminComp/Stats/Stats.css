@@ -1,0 +1,117 @@
+.stats> .users> .charts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    flex-direction: column;
+}
+
+.stats> .users> .charts > .chart{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+    transition: var(--transition);
+    border-radius: 5px;
+}
+
+.stats >.users >.charts > .chart:nth-child(1){
+    animation: animateUp .5s forwards   ease-in ;
+}
+.stats >.users >.charts > .chart:nth-child(2){
+    animation: animateLeft .5s forwards   ease-in ;
+}
+.stats >.users >.charts > .chart:nth-child(3){
+    animation: animateMiddle .5s forwards   ease-in ;
+}
+.stats >.users >.charts > .chart:nth-child(4){
+    animation: animateRight .5s forwards   ease-in ;
+}
+.stats >.users >.charts > .chart:nth-child(5){
+    animation: animateDown .5s forwards   ease-in ;
+}
+.stats> .users> .charts > .chart:hover{
+    transform: scale(1.05);
+}
+.stats> .users> .charts > .chart > .header{
+    width: 100%;
+    border: none;
+    text-transform: uppercase;
+}
+.stats> .users> .charts > .chart > .pieChart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.stats> .users> .charts > .chart > .header h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-bottom: 2px solid var(--navColor);
+    padding-bottom: 10px;
+}
+.stats> .users> .charts > .chart .colorBox .pie{
+    flex-grow: 3;
+}
+.stats> .users> .charts > .chart .colorBox{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    flex-grow: 1;
+}
+.stats> .users> .charts > .chart .colorBox .row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+.stats> .users> .charts > .chart .colorBox .row h3{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.stats> .users> .charts > .chart .colorBox .box{
+    width: 30px;
+    height: 30px;
+   
+}
+.stats> .users> .charts > .chart .colorBox .row:first-child .box{
+    background-color: var(--textColorWarn);
+}
+.stats> .users> .charts > .chart .colorBox .row:last-child .box{
+    background-color: var(--textColor);
+}
+
+/* For Tablets */
+@media screen and (max-width:999px) {
+    .stats> .users> .charts > .chart > .pieChart {
+        flex-direction: column;
+    }
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px) {
+    .stats> .users> .charts > .chart > .header h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .stats> .users> .charts > .chart .colorBox .row h3 {
+        font-size: .8rem;
+    }
+    .stats> .users> .charts > .chart .colorBox .box {
+        width: 20px;
+        height: 20px;
+    }
+    /* .stats> .users> .charts > #radialBar{
+        display: none;
+    } */
+}

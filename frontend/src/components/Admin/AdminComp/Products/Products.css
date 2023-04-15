@@ -1,0 +1,66 @@
+.users .addProduct{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    animation: animateUp .5s forwards   ease-in ;
+}
+
+.users .addProduct button{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--textColorDark);
+    border-radius:5px ;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.users .addProduct button:hover{
+    color: white;
+    background-color: var(--textColorDark);
+    transform: scale(1.05);
+}
+
+.viewModal >.modal>form .form-item .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.viewModal >.modal>form .form-item .images img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+/* For Tablets */
+@media screen and (max-width:999px) {
+
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px) {
+    .users .addProduct{
+        flex-direction: column;
+        width: 100%;
+    }
+    .users .addProduct button {
+        /* padding: 7px 14px; */
+        gap: .5rem;
+        font-size: .8rem;
+    }
+}

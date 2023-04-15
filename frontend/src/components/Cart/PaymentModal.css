@@ -1,0 +1,105 @@
+.cart#cart.spActive{
+    /* padding: 15% 5%; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.cart#cart.spActive .inner{
+    width: 100%;
+}
+.payment{
+    width: 100%;
+    padding: 5%;
+    background-color: white;
+}
+
+.payment > .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.payment > .box > .title{
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+.payment > .box form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+}
+
+.payment > .box form .data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+}
+
+.payment > .box form .data input{
+    width: 45%;
+    padding: 10px;
+    background-color: var(--navColor);
+    font-size: 1.2rem;
+    border: none;
+    outline-width: 0;
+}
+
+.payment > .box form  .btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.payment > .box form  .btns button,.payment > .box form  .btns a,.payment > .box form  .btns input[type="submit"]{
+    font-size: 1.2rem;
+    border: none;
+    padding: 10px 20px ;
+    color: white;
+    background-color: var(--textColor);
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.payment > .box form  .btns button:hover,.payment > .box form  .btns a:hover,.payment > .box form  .btns input[type="submit"]:hover{
+    transform: scale(1.05);
+}
+
+/* For Tablets */
+@media screen and (max-width:999px) {
+
+    .payment > .box form .data{
+        flex-direction: column;
+    }
+
+    .payment > .box form .data input{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px) {
+    .payment > .box form .data{
+        gap: 1rem;
+    }
+
+    .payment > .box form .data input{
+        font-size: .9rem;
+    }
+    .payment > .box form  .btns button,.payment > .box form  .btns input[type="submit"]{
+        padding: 5px 10px;
+        font-size: .9rem;
+    }
+}

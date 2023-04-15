@@ -1,0 +1,225 @@
+.login-signup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    background-color: var(--navColor);
+    padding:8%;
+}
+
+.login-signup .wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.login-signup .wrapper .login{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    position: relative;
+}
+
+.login-signup .wrapper .login .left{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .2s;
+}
+
+.login-signup .wrapper .login .left .heading{
+    font-size: 1.7rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+
+.login-signup .wrapper .login .left form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.login-signup .wrapper .pic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+.login-signup .wrapper .pic img{
+    width: 50px;
+    height: 50px;
+}
+
+.login-signup .wrapper .login .left form input[type="text"],.login-signup .wrapper .login .left form input[type="file"],.login-signup .wrapper .login .left form input[type="password"],.login-signup .wrapper .login .left form input[type="email"]{
+    font-size: 1rem;
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    font-weight: 600;
+    background-color: var(--navColor);
+    border: none;
+    border-radius: 5px;
+}
+.login-signup .wrapper .login .left form input[type="file"]{
+    width: 80%;
+}
+.login-signup .wrapper .login .left form input[type="text"],.login-signup .wrapper .login .left form input[type="file"],.login-signup .wrapper .login .left form input[type="password"],.login-signup .wrapper .login .left form input[type="email"]:focus{
+    outline-width: 0;
+}
+.login-signup .wrapper .login .left form a{
+    color: black;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.login-signup .wrapper .login .left form a:hover{
+    color: var(--textColorWarn);
+}
+.login-signup .wrapper .login .left form input[type="submit"]{
+    color: white;
+    background-color: var(--textColor);
+    border: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 10px 50px;
+    font-size: 1.3rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.login-signup .wrapper .login .left form input[type="submit"]:hover{
+    background-color: var(--textColorDark);
+}
+.login-signup .wrapper .login .right{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--textColor);
+    color: white;
+    transition: all .2s;
+}   
+
+.login-signup .wrapper .login .right .heading{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.login-signup .wrapper .login .right p{
+    font-size: 1.1rem;
+    font-size: 600;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.login-signup .wrapper .login .right button{
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 10px 50px;
+    font-size: 1.3rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.login-signup .wrapper .login .right button:hover{
+    background-color: var(--textColorDark);
+    border: 2px solid var(--textColorDark);
+}
+
+.login-signup .wrapper .login.register .left{
+    left: 50%;
+} 
+
+.login-signup .wrapper .login.register .right{
+    left: 0%;
+}
+
+/* For Tablets */
+@media screen and (max-width:999px) {
+    .login-signup{
+        padding: 15% 8%;
+    }
+    .login-signup .wrapper .login .left{
+        width: 100%;
+        height: 60%;
+    }
+    .login-signup .wrapper .login .right{
+        left: 0;
+        top: 60%;
+        width: 100%;
+        height: 40%;
+    }
+    .login-signup .wrapper .login.register .left{
+        left: 0;
+        top: 40%;
+    }
+    .login-signup .wrapper .login.register .right{
+        top: 0%;
+    }
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px) {
+    .login-signup .wrapper .pic img {
+        width: 30px;
+        height: 30px;
+    }
+    .login-signup .wrapper .login .right .heading{
+        font-size: 1rem;
+    }
+    .login-signup .wrapper .login .right p{
+        font-size: .7rem;
+        margin-bottom: 20px;
+    }
+    .login-signup .wrapper .login .right button{
+        font-size: .8rem;
+    }
+
+    .login-signup .wrapper .login .left .heading{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .login-signup .wrapper .login .left form input[type="text"],.login-signup .wrapper .login .left form input[type="file"], .login-signup .wrapper .login .left form input[type="password"],.login-signup .wrapper .login .left form input[type="email"] {
+        font-size: .7rem;
+        padding: 5px;
+    }
+    .login-signup .wrapper .login .left form a{
+        font-size: .7rem;
+        margin-bottom: 10px;
+    }
+    .login-signup .wrapper .login .left form input[type="submit"]{
+        font-size: .9rem;
+        padding: 8px 40px;
+    }
+}

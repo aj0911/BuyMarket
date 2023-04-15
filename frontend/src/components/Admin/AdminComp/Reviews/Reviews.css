@@ -1,0 +1,21 @@
+.users > .info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--navColorDark);
+}
+
+.users > .info h3{
+    font-weight: 500;
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px) {
+    .users > .info{
+        font-size: .7rem;
+        gap: .5rem;
+    }
+}

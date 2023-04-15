@@ -1,0 +1,127 @@
+.viewModal .modal .email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding: 10px;
+}
+
+.viewModal .modal .email .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid var(--navColor);
+    padding-bottom: 10px;
+}
+
+.viewModal .modal .email .top .left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+}
+
+.viewModal .modal .email .top .left img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.viewModal .modal .email .top .left .left-text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.viewModal .modal .email .top .left .left-text h3,.viewModal .modal .email .middle h5,.viewModal .modal .email .middle p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.viewModal .modal .email .top .left .left-text h5{
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--navColorDark);
+}
+.viewModal .modal .email .top .right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.viewModal .modal .email .top .right p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.viewModal .modal .email .middle{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+.viewModal .modal .email .btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.viewModal .modal .email .btns button{
+    font-size: 1rem;
+    color: var(--textColorDark);
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.viewModal .modal .email .btns button:hover{
+    transform: scale(1.05);
+    color: white;
+    background-color: var(--textColorDark);
+}
+
+/* For Tablets */
+@media screen and (max-width:999px) {
+    .viewModal .modal .email .top{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px) {
+    .viewModal .modal .email .top .left img {
+        width: 30px;
+        height: 30px;
+    }
+    .viewModal .modal .email .top .left .left-text h3, .viewModal .modal .email .middle h5, .viewModal .modal .email .middle p {
+        font-size: .6rem;
+    }
+    .viewModal .modal .email .top .left .left-text h5 {
+        font-size: .5rem;
+    }
+    .viewModal .modal .email .top .right p {
+        font-size: .6rem;
+    }
+}
+
+

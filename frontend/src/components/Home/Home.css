@@ -1,0 +1,158 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../Assets/lappy.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    z-index: 0;
+}
+
+.hero::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    content: '';
+    background-color: black;
+    z-index: -1;
+}
+
+.hero .text{
+    text-align: center;
+}
+
+.hero .text h3{
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+.hero .text h1{
+    font-size:3rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.hero > a{
+    color: white;
+    border: 2px solid;
+    padding: 10px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    transition:var(--transition);
+}
+.hero > a:hover{
+    color: black;
+    background-color: white;
+    border: none;
+    transform: scale(1.05);
+}
+
+.products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.products .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+}
+.products .box .product{
+    width: 20%;
+    transition: var(--transition);
+    cursor: pointer;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+    overflow:hidden;
+    border-radius: 5px;
+}
+.products .box .product:hover{
+    transform: scale(1.05);
+}
+.products .box .product .top{
+    width: 100%;
+    height: 30%;
+}
+.products .box .product .top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.products .box .product .middle{
+    text-align: center;
+}
+.products .box .product .middle h3{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.products .box .product .middle .review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.products .box .product .middle .review h4{
+    font-weight: 300;
+    font-size: 1rem;
+}
+.products .box .product .lower{
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--textColorWarn);
+}
+
+/* For Tablets */
+@media screen and (max-width:999px) {
+    .hero .text h3{
+        font-size: 1.5rem;
+    }
+    .hero .text h1{
+        font-size:2rem
+    }
+    .products .box .product .middle h3{
+        font-size: 1rem;
+    }
+    .products .box .product .middle .review h4{
+        font-size: .9rem;
+    }
+    .products .box .product .middle .review{
+        gap: .5rem;
+    }
+    .products .box .product .lower{
+        font-size: 1rem;
+    }
+}
+
+/* For Mobiles */
+@media screen and (max-width:599px) {
+
+    .hero .text h3{
+        font-size: 1rem;
+    }
+    .hero .text h1{
+        font-size:1.5rem
+    }
+    .hero a{
+        font-size: .7rem;
+    }
+    .products .box .product{
+        width: 100%;
+    }
+}
