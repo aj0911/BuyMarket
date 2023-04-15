@@ -1,0 +1,6 @@
+{
+    "version":"1.0.0",
+    "name":"buymarket",
+    "builds":[{"src":"Backend/server.js","use":"@vercel/node"}],
+    "routes":[{"src":"/(.*)","dest":"Backend/server.js"}]
+}
