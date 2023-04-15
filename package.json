@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon Backend/server.js",
-    "dev": "node Backend/server.js",
-    "vercel build": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
+    "dev": "node Backend/server.js"
   },
   "author": "Abhinav Jha- AR Solutions",
   "license": "ISC",
