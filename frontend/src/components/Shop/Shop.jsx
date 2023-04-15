@@ -37,6 +37,7 @@ const Shop = () => {
             setLoader(false)
           }
         }).catch((exception)=>{
+          console.log(exception)
           toast.warn(exception.response.data.message);
           setLoader(false)
         }).finally(()=>{
