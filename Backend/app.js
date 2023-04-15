@@ -12,7 +12,7 @@ const corsConfig = {
     credentials: true,
 };
   
-app.use(cors(corsConfig));
+// app.use(cors(corsConfig));
 app.options('*', cors(corsConfig));
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb',extended:true}));
