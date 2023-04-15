@@ -9,7 +9,7 @@ const categories = [
     'Footwear'
 ]
 
-export const urlPrefix = 'http://localhost:4000/api/v1';
+export const urlPrefix = `https://buymarketajsolutions.vercel.app/api/v1`;
 const monthNames = [ "January", "February", "March", "April", "May", "June",
 "July", "August", "September", "October", "November", "December" ];
 export const getFullDate = (dateNumber,isTime)=>{
