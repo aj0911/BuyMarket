@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f803e04b.css",
+    "main.js": "/static/js/main.20e9a45f.js",
+    "static/media/hero2-bg.png": "/static/media/hero2-bg.8fd816cf49dd4126c84f.png",
+    "static/media/lappy.jpg": "/static/media/lappy.be64491bef2bca495ba0.jpg",
+    "static/media/avatar.jpg": "/static/media/avatar.61e0619b23033f39963b.jpg",
+    "index.html": "/index.html",
+    "main.f803e04b.css.map": "/static/css/main.f803e04b.css.map",
+    "main.20e9a45f.js.map": "/static/js/main.20e9a45f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f803e04b.css",
+    "static/js/main.20e9a45f.js"
+  ]
+}
