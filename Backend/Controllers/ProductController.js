@@ -62,19 +62,6 @@ exports.getAllProducts =catchAsyncErrors(async(req,res)=>{
     res.status(200).json({
         success:'true',
         message:'All Product Sent',
-        products:[
-            {
-                name:'Product 1',
-                price:200,
-                rating:3,
-                images:[
-                    {
-                        public_id:'sample Id',
-                        url:'public url'
-                    }
-                ]
-            }
-        ]
     })
 })
 

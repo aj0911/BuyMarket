@@ -23,6 +23,7 @@ const Home = () => {
     setLoader(true)
         api.get(url).then((res)=>{
           if(res){
+            console.log(res.data);
             setData(res.data)
             setLoader(false)
           }
