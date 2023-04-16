@@ -41,28 +41,24 @@ exports.createProduct =catchAsyncErrors(async(req,res,next)=>{
 
 //Get all Products
 exports.getAllProducts =catchAsyncErrors(async(req,res)=>{
-    // const productPerPage =8;
-    // const apifeaturesagain = new ApiFeatures(Product.find(),req.query)
-    // .search()
-    // .filter()
-    // const totalProduct = (await apifeaturesagain.query).length;
-    // const apifeatures = new ApiFeatures(Product.find(),req.query)
-    //     .search()
-    //     .filter()
-    //     .pagination(productPerPage);
-    // const product = await apifeatures.query;
-    // res.status(200).json({
-    //     success:'true',
-    //     message:'All Products Sent',
-    //     totalProduct,
-    //     count:product.length,
-    //     product,
-    //     products:(await Product.find({}))
-    // });
+    const productPerPage =8;
+    const apifeaturesagain = new ApiFeatures(Product.find(),req.query)
+    .search()
+    .filter()
+    const totalProduct = (await apifeaturesagain.query).length;
+    const apifeatures = new ApiFeatures(Product.find(),req.query)
+        .search()
+        .filter()
+        .pagination(productPerPage);
+    const product = await apifeatures.query;
     res.status(200).json({
         success:'true',
-        message:'All Product Sent',
-    })
+        message:'All Products Sent',
+        totalProduct,
+        count:product.length,
+        product,
+        products:(await Product.find({}))
+    });
 })
 
 //Update Product
