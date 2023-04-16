@@ -25,7 +25,6 @@ const Delivery = ({setContent,selectMenu}) => {
     setLoader(true);
     api.create({withCredentials:true}).get(`${urlPrefix}/admin/delivery`).then((res)=>{
       setData(res.data);
-      console.log(res.data);
       setLoader(false);
     }).catch((error)=>{
       setErr(error);

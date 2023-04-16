@@ -51,13 +51,14 @@ exports.getAllProducts =catchAsyncErrors(async(req,res)=>{
         .filter()
         .pagination(productPerPage);
     const product = await apifeatures.query;
+    const products = (await Product.find({}));
     res.status(200).json({
         success:'true',
         message:'All Products Sent',
         totalProduct,
         count:product.length,
         product,
-        products:(await Product.find({}))
+        products
     });
 })
 

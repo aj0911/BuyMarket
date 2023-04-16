@@ -19,10 +19,8 @@ const Dashboard = ({setContent,selectMenu}) => {
     setLoader(true);
     api.create({withCredentials:true}).get(urlPrefix+'/admin').then((res)=>{
       setData(res.data);
-      console.log(res.data)
       setLoader(false);
     }).catch((err)=>{
-      console.log(err)
       setErr(err);
       setLoader(false);
     }).finally(()=>{
