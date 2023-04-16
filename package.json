@@ -5,8 +5,8 @@
   "main": "Backend/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon Backend/server.js",
-    "dev": "node Backend/server.js"
+    "start": "node Backend/server.js",
+    "dev": "nodemon Backend/server.js"
   },
   "author": "Abhinav Jha- AR Solutions",
   "license": "ISC",
