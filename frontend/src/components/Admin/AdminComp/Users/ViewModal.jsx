@@ -121,7 +121,7 @@ const ViewModal = ({user_id,setViewModal,loader,setLoader,urlPrefix}) => {
                                 </div>
                         }
                             <div className="btns">
-                                <button onClick={()=>setViewModal(false)} style={{display:(editModal)?'':'none'}}>Close</button>
+                                <a onClick={()=>setViewModal(false)} style={{display:(editModal)?'':'none'}}>Close</a>
                                 <input type="submit" value={(editModal)?'Update Role':'Close'} />
                             </div>
                     </form>:''

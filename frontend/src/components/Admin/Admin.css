@@ -156,7 +156,7 @@
     .viewModal >.modal > form .form-item label{
         font-size: .7rem;
     }
-    .viewModal >.modal > form .btns input[type="submit"], .viewModal >.modal > form .btns button{
+    .viewModal >.modal > form .btns input[type="submit"],.viewModal >.modal > form .btns a, .viewModal >.modal > form .btns button{
         padding: 5px 10px;
         font-size: 1rem;
     }

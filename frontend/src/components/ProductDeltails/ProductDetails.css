@@ -350,4 +350,9 @@
         width: 90%;
     }
 
+    .review-modal >.modal .btns a{
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+
 }
