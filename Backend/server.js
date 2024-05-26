@@ -4,7 +4,7 @@ const cloudinary = require('cloudinary');
 
 //config.env
 if(process.env.NODE_ENV !== 'PRODUCTION'){
-    require('dotenv').config({path:"Backend/configuration/config.env"});
+    require('dotenv').config({path:"configuration/config.env"});
 }
 
 //Uncaught Error
